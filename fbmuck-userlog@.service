@@ -1,0 +1,9 @@
+[Unit]
+Description=Handle fbmuck user log changes
+
+[Service]
+Type=simple
+ExecStart=/opt/fuzzball/%i/game/userlog_handler.py
+
+[Install]
+WantedBy=multi-user.target

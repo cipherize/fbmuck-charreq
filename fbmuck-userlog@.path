@@ -1,0 +1,9 @@
+[Unit]
+Description=Monitor fbmuck user log for changes
+
+[Path]
+PathChanged=/opt/fuzzball/%i/game/logs/user
+Unit=fbmuck-userlog@%i.service
+
+[Install]
+WantedBy=multi-user.target
